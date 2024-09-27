@@ -11,3 +11,14 @@ Research Papers on PINNs :
 1. https://faculty.sites.iastate.edu/hliu/files/inline-files/PINN_RPK_2019_1.pdf
 2.  https://arxiv.org/pdf/2303.01055
 
+Setup:
+```
+$ git clone https://github.com/lululxvi/deepxde.git
+$ cd deepxde/docker
+$ docker build -f Dockerfile . -t deepxde
+```
+
+```
+docker run -v $(pwd):/root/shared -w "/root/shared" -p 8888:8888 deepxde
+```
+Add the file then run the Jupyter Notebook
